@@ -1,9 +1,11 @@
 <h1>Posts</h1>
 
 <ul class="list-unstyled">
-	{{#each}}
+	{{#each model as |item|}}
 	<li>
-		{{title}}
+		<div class="well">
+			{{item.title}}
+		</div>
 	</li>
 	{{/each}}
 </ul>
